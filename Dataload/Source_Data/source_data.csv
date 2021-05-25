@@ -1,0 +1,4 @@
+First Name	Last Name	SSN	Date	TransactionId	Amount	LineItems	Type	Terms
+Jill	Thornton	555-55-5555	2020-01-01	x0n4tu7	45.01	[{"id":12, "name": "G2", "quantity": 1, "unit": "license"}, {"id":34, "name": "G2 Track", "quanityt":10, "unit": "domain" }]	booked	net-30
+Jill		555-55-5555	2020-01-01	x0n4tu7-1	25		partial-payment
+Jill	Thornton	555-55-5555	2020-03-01	x0n4tu7-2	20.01	[{"id":12, "name": "G2", "quantity": 1, "unit": "license"}, {"id":34, "name": "G2 Track", "quanityt":10, "unit": "domain" }]	partial-payment

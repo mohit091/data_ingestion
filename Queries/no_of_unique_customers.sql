@@ -1,0 +1,1 @@
+select count(distinct customer_id) from TRANSACTIONS.FACT_TRANSACTION where transaction_date between current_date-90 and current_date;
