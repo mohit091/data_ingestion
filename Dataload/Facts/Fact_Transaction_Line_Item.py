@@ -3,8 +3,10 @@ import traceback
 
 
 class fact_transaction_line_item_load():
+    '''Class to perform all the ingestion activities for fact_transaction_line_item'''
 
     def data_load(self, host, port, dbname, user, password):
+        '''function to load data to fact transaction line item table'''
         try:
             host = host
             port = port

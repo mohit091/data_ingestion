@@ -3,8 +3,10 @@ import traceback
 
 
 class dim_customer_load():
+    '''Class to perform all the ingestion activities for dim_customer'''
 
     def data_load(self,host,port,dbname,user,password):
+        '''function to load data to dim_customer table'''
         try:
             host=host
             port=port

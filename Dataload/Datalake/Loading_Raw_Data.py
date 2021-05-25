@@ -5,8 +5,10 @@ import traceback
 
 
 class datalake_load():
+    '''Class to perform all the ingestion activities for datalake'''
 
     def raw_data_load(self,host,port,dbname,user,password):
+        '''function to load data to datalake table'''
         try:
             host=host
             port=port
