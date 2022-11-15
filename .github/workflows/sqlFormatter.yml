@@ -1,6 +1,12 @@
 name: Lint Models
 
-on: [push,pull_request]
+on:
+  push:
+    paths:
+    - 'Queries/*'
+  pull_request:
+    paths: 
+    - 'Queries/*'
 
 jobs:
   lint-models:
