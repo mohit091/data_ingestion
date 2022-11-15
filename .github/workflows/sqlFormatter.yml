@@ -13,12 +13,4 @@ jobs:
       - name: Install SQLFluff
         run: "pip install sqlfluff==1.4.2"
       - name: Lint models
-        run: "value=`sqlfluff lint Queries/* --dialect ansi`
-             if [[ $value == *"FAIL"* ]]; then
-             fix=`sqlfluff fix Queries/* --force --dialect anshi`
-             echo $fix
-             remaining_format=`sqlfluff lint Queries/* --dialect ansi`
-             echo $remaining_format
-             else;
-             echo 'success';
-             fi;"
+        run: "value=`sqlfluff lint Queries/* --dialect ansi` if [[ $value == *"FAIL"* ]]; then fix=`sqlfluff fix Queries/* --force --dialect anshi` echo $fix remaining_format=`sqlfluff lint Queries/* --dialect ansi` echo $remaining_format else; echo 'success'; fi;"
