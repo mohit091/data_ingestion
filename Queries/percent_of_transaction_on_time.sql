@@ -10,4 +10,4 @@ a.transaction_id=b.transaction_id and a.transaction_date=b.transaction_date and 
 
 total_transaction as (select count(1) as total from TRANSACTIONS.FACT_TRANSACTION where transaction_type=1)
 
-select (total_on_time_payment.total/total_transaction.total)*100 as percent_transaction_on_time from total_on_time_payment,total_transaction;
+select (total_on_time_payment.total/total_transaction.total)*100 as percent_transaction_time from total_on_time_payment,total_transaction;
