@@ -1,0 +1,6 @@
+-   repo: https://github.com/sqlfluff/sqlfluff
+    rev: 0.9.1
+    hooks:
+    -   id: sqlfluff-lint
+        args: [--dialect, "ansi"]
+        files: 'sql/dir2/'
