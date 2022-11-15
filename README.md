@@ -7,7 +7,7 @@ This project is to ingest the data available in file to database so that we can 
 
 # Arcitecture
 
-Used docker images of postgres as database to load the data and docker image of python to do the ingestion processing . Both the images are coupled with docker compose to start the services. When docker compose is start it first start the db image and then the python image . We can then login to the database image to see the ingested data and run our reqyired analytics queries to see the result 
+Used docker images of postgres as database to load the data and docker image of python to do the ingestion processing . Both the images are coupled with docker compose to start the services. When docker compose is start it first start the db image and then the python image . We can then login to the database image to see the ingested data and run our reqyired analytics queries to see the result. 
 
 
 Python code is used to ingest the data from the available file first to datalake and then using datalake we ingest data to the data model comprising of facts and dimensions
