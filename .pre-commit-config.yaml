@@ -1,0 +1,11 @@
+repos:
+- repo: https://github.com/sqlfluff/sqlfluff
+  rev: 1.4.2
+  hooks:
+    - id: sqlfluff-lint
+      args: [--dialect, "hive"]
+      files: ^data_ingestion/Queries/*
+      
+    - id: sqlfluff-fix
+      args: [--dialect, "hive"]
+      files: ^data_ingestion/Queries/*
