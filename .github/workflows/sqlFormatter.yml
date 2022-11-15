@@ -13,4 +13,4 @@ jobs:
       - name: Install SQLFluff
         run: "pip install sqlfluff==1.4.2"
       - name: Lint models
-        run: "sqlfluff lint data_ingestion/Queries/* --dialct ansi"
+        run: "sqlfluff lint Queries/* --dialect ansi"
