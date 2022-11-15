@@ -1,3 +1,4 @@
+#!/bin/bash
 value=`sqlfluff lint Queries/* --dialect hive`
 if [[ $value == *"FAIL"* ]]; then
 fix=`sqlfluff fix Queries/* --force --dialect hive`
