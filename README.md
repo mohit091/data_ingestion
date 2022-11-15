@@ -2,7 +2,7 @@
 
 # Project Overview
 
-This project is to ingest the data available in file to database so that we can run our analytics queries on top of it
+This project is to ingest the data available in file to database so that we can run our analytics queries on top of it.
 
 
 # Arcitecture
