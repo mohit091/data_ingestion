@@ -5,7 +5,7 @@ fix=`sqlfluff fix Queries/* --force --dialect hive`
 echo $fix
 remaining_format=`sqlfluff lint Queries/* --dialect hive`
 echo $remaining_format
-else;
-echo 'success';
+else
+echo 'success'
 fi;
 
